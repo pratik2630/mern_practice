@@ -8,7 +8,7 @@ function mern(req,res){
 //    res.write("Hi")
 //    res.write("Hi")
   
-    const wurl = "https://api.openweathermap.org/data/2.5/weather?q=jaipur&appid=4569cb938c3140e7c727fe6b7b2efeb0"
+    const wurl = "https://api.openweathermap.org/data/2.5/weather?q=jaipur&appid=<access_token>"
     https.get(wurl , function(response){
         console.log(res.statusCode);
         response.on("data" , function(mydata){
