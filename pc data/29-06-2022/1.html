@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>test</title>
+
+	<script>
+	function mern(){
+	alert(document.all)
+	}
+	</script>
+	</head> 
+
+<body>
+	<div>Hello everyone</div>
+	<input value =  " "/>
+	<button onclick  = "mern()">Click me</button>
+
+
+	<script>
+	function mern2(){
+	x = document.forms["myform1"]["n2"];
+	if (x.value == "")
+		{
+		alert("plz enter value")
+		return false
+		}
+	}
+	</script>	
+	
+	<form name="myform1" id="f1" action="my.html" onsubmit="return mern2()">
+	Name<input name="n2" />
+	<input type="submit"/>
+	<br />
+	
+	</form>
+<form action="a.html">
+<input required>
+<input type="submit">
+</form>
+	<button onclick="alert('HI')">click</button>
+</body>
+</html>

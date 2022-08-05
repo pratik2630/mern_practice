@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      function mern() {
+        ta_div = document.getElementById("textAreaDiv");
+        op_div = document.getElementById("output");
+        op_div.innerHTML = ta_div.value;
+    
+    }
+    </script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="box">
+      <div id="code">code area
+        <br/>
+        <textarea onkeyup="mern()" id="textAreaDiv"></textarea>
+      </div>
+      <div id="output">output area</div>
+    </div>
+  </body>
+</html>

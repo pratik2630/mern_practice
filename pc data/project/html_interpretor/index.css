@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#textAreaDiv{
+    background: black;
+    height: 100%;
+    width: 100%;
+    color: lime;
+}
+#box{
+    background-color: grey;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#code{
+background-color: green;
+height: 100%;
+width: 50%;
+}
+#output{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}

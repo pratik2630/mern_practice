@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <script>
+    function mern() {
+      var html_div = document.getElementById("html-code").value;
+      var css_div = "<style>" + document.getElementById("css-code").value + "</style>";
+      var js_div =
+        "<script>" + document.getElementById("js-code").value + "</scri" + "pt>";
+
+      var frame =
+        document.getElementById("output_area").contentWindow.document;
+
+      frame.open();
+      frame.write(html_div+css_div+js_div);
+      frame.close();
+    }
+  </script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  
+    <div id="code">
+      <br />
+      <textarea id="html-code" oninput="mern()" placeholder="Enter HTML code here"></textarea>
+      <textarea id="css-code" oninput="mern()" placeholder="Enter CSS code here"></textarea>
+      <textarea id="js-code" oninput="mern()" placeholder="Enter javascript code here"></textarea>
+   
+     
+    </div>
+    <div id="output">
+      output area
+      <iframe id="output_area"></iframe>
+    </div>
+  
+</body>
+
+</html>

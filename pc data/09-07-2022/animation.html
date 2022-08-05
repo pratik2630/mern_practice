@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    <script>
+        function mern(){
+            var x = document.getElementById("d1")
+        x.style.background= "black";
+        x.style.color= "lime";
+        x.style.border = "solid 3px grey"
+            //     var y = x.innerHTML;
+        //     alert(y);
+         }
+         function formVisible(){
+                var z = document.getElementById("d2")
+                z.style.visibility= "visible";  
+            }
+    </script>
+    <style>
+    #d2{
+        visibility: hidden;
+        background-color: grey;
+        color: limegreen;
+        border: solid 2px black ;
+        margin: 4px;
+        padding: 4px;
+        height: 100px;
+        width: 200px;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+    }
+    </style>
+    </head>
+    <body>
+        <div id="d1">This is Para</div>
+        <script>
+            setTimeout(mern , 4000);
+
+        </script>
+        <button onclick="mern()">Click</button>
+
+        <div id="d2">
+            <form>
+                Name <input />
+                marks <input />
+                <button>submit form</button>
+            </form>
+        </div>
+
+        <script>
+            setTimeout(formVisible , 5000);    
+        </script>
+        
+    </body>
+</html>
