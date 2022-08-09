@@ -1,0 +1,51 @@
+
+<script>
+function ajax_code() {
+
+  var cn = document.getElementById("input_cname").value;
+  var ci = document.getElementById("input_cimage").value;
+
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("crun").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "http://52.66.203.12:3000/run?container_name="+cn+"&container_image="+ci);
+  xhttp.send();
+}
+</script>
+
+
+<script>
+function ps_code() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("psrun").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "http://52.66.203.12:3000/ps");
+  xhttp.send();
+}
+</script>
+
+
+
+<h1>Launch Docker containers</h1>
+<!--<form action="/run" method="GET">-->
+	Launch container <br />
+	Name <input name="container_name"  id="input_cname"/><br />
+
+	docker image 
+	<select name="container_image" id="input_cimage">
+		<option>centos</option>
+		<option>ubuntu</option>
+	</select> <br />
+	<!--//	<input  type="submit" /> -->
+	<!--</form>-->
+
+<div id ="crun"> This is my container data</div>
+<button onclick="ajax_code()">Button</button>
+
+<div id ="psrun"> This is my container data</div>
+<button onclick="ps_code()">Button</button>
+
