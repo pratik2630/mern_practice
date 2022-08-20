@@ -1,0 +1,12 @@
+{
+   " name":"Pratik",
+    "phone": 1111,
+    "email":"h@gmail.com",
+    
+    "purchased_courses":
+    {
+        "course_name":"MERN",
+        "price": 12.50,
+        "purchased_date": "2-3-2022"
+    }
+}
