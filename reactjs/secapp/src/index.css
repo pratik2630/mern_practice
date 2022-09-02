@@ -1,0 +1,12 @@
+.myc{
+    color:blue;
+    text-align: center;
+}
+.mypost{
+    color: red;
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 14px;
+    margin: 5px;
+    border-radius: 10px;
+}
